@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 20px; /* base text size (bigger) */
+      line-height: 1.6;
+      color: #222;
+      background: url("modern-luxury-home-with-beautiful-landscape.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .bg-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(255, 255, 255, 0.9); /* makes background image very light */
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    header {
+      padding: 30px 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px; /* larger main heading */
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 8px 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto 40px auto;
+      padding: 0 20px 40px 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 22px;
+    }
+
+    .actions {
+      margin-top: 20px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .primary-btn {
+      padding: 14px 26px;
+      border: none;
+      border-radius: 6px;
+      background-color: #ff7a00;
+      color: #ffffff;
+      font-size: 18px; /* bigger button text */
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .primary-btn:hover {
+      background-color: #e56c00;
+      transform: translateY(-1px);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 18px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      body {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <header>
+    <h1>Cleaners, Plumbers, Electricians & more – all in real-time</h1>
+    <p class="hero-subtitle">Get trusted home and office services whenever you need them.</p>
+
+    <div class="actions">
+      <button class="primary-btn">Our Services</button>
+      <button class="primary-btn">Find a Service</button>
+      <button class="primary-btn">Contact</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="services">
+      <h2>Popular Services</h2>
+
+      <div class="services-grid">
+        <article class="card">
+          <h3>Professional Cleaners</h3>
+          <p>Professional cleaners for your home and office.</p>
+        </article>
+
+        <article class="card">
+          <h3>Expert Plumbers</h3>
+          <p>Expert plumbers to fix leaks and install pipes.</p>
+        </article>
+
+        <article class="card">
+          <h3>Certified Electricians</h3>
+          <p>Certified electricians for repairs and installations.</p>
+        </article>
+
+        <article class="card">
+          <h3>Painting Services</h3>
+          <p>Home and office painting services at affordable rates.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Home Services. All rights reserved.
+  </footer>
+</body>
+</html>
